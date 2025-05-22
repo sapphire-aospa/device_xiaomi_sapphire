@@ -6,13 +6,13 @@
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit from sapphire device
 $(call inherit-product, device/xiaomi/sapphire/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aospa/target/product/aospa-target.mk)
 
 # Include our private certificate
 -include vendor/lineage-priv/keys/keys.mk
@@ -24,7 +24,19 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES = 1080
 TARGET_HAS_UDFPS := true
 
+<<<<<<< Updated upstream:lineage_sapphire.mk
 PRODUCT_NAME := lineage_sapphire
+=======
+# Extra Stuffs
+TARGET_SUPPORTS_QUICK_TAP := true
+WITH_GMS := true
+TARGET_ENABLE_BLUR := false
+BUILD_BCR := false
+TARGET_INCLUDE_ACCORD := false
+EVO_BUILD_TYPE := Unofficial
+
+PRODUCT_NAME := aospa_sapphire
+>>>>>>> Stashed changes:aospa_sapphire.mk
 PRODUCT_DEVICE := sapphire
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi

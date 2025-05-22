@@ -5,7 +5,7 @@
 #
 
 # Add common definitions for Qualcomm
-$(call inherit-product, hardware/qcom-caf/common/common.mk)
+$(call inherit-product, device/qcom/common/common.mk)
 
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
@@ -25,6 +25,10 @@ $(call inherit-product, vendor/xiaomi/sapphire/sapphire-vendor.mk)
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
+# Platform
+TARGET_BOARD_PLATFORM := bengal
+TARGET_BOARD_SUFFIX := _515
 
 # ART
 ART_BUILD_TARGET_NDEBUG := true
