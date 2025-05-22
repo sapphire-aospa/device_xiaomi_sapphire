@@ -462,7 +462,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Device-specific settings
  PRODUCT_PACKAGES += \
-    XiaomiParts \
     XiaomiVoIPFix
 
 
