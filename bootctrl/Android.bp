@@ -5,7 +5,10 @@
 //
 
 soong_namespace {
-    imports: ["hardware/qcom/bootctrl"],
+    imports: [
+        "hardware/qcom/bootctrl",
+        "device/xiaomi/sapphire",
+    ],
 }
 
 cc_library_shared {
