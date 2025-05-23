@@ -34,6 +34,11 @@ AB_OTA_PARTITIONS += \
     vendor_boot \
     vendor_dlkm
 
+
+# AOSPA
+TARGET_BOOT_ANIMATION_RES := 1080
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
