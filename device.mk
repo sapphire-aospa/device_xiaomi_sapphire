@@ -82,7 +82,7 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     libvolumelistener
 
-AUDIO_HAL_DIR := hardware/qcom-caf/sm6225/audio/primary-hal
+AUDIO_HAL_DIR := hardware/qcom/sm6225/audio/primary-hal
 
 PRODUCT_COPY_FILES += \
     $(AUDIO_HAL_DIR)/configs/common/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
